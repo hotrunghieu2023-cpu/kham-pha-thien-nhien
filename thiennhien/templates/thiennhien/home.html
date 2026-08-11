@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá thiên nhiên</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'thiennhien/css/style.css' %}">
+</head>
+<body>
+
+<div class="container-fluid page">
+
+    <div class="row">
+
+        <!-- Sidebar -->
+
+        <div class="col-lg-3 sidebar">
+
+            <h2>🌿 KHÁM PHÁ<br>THIÊN NHIÊN</h2>
+
+            <input type="text"
+                   class="form-control mt-4"
+                   placeholder="Tìm kiếm...">
+            <div class="sidebar-section">
+                
+                <h4>🌿 DANH MỤC</h4>
+                <ul class="category-list">
+                    <li>🌲 Rừng xanh</li>
+                    <li>🏔️ Núi non</li>
+                    <li>🌊 Biển cả</li>
+                    <li>🐾 Động vật</li>
+                    <li>🌱 Thực vật</li>
+                    <li>☁️ Khí hậu</li>
+                    <li>📷 Du lịch sinh thái</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section featured">
+                <h4>⭐ BÀI VIẾT NỔI BẬT</h4>
+
+                <div class="featured-item">
+                    <img src="{% static 'thiennhien/images/OIP (5).jpg' %}">
+                    <span>Những khu rừng đẹp nhất thế giới</span>
+                </div>
+
+                <div class="featured-item">
+                    <img src="{% static 'thiennhien/images/IMG_6714.jpg' %}">
+                    <span>Thế giới đại dương kỳ thú</span>
+                </div>
+
+                <div class="featured-item">
+                    <img src="{% static 'thiennhien/images/OIP (5).jpg' %}">
+                    <span>Động vật hoang dã đáng yêu</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section fact">
+                <h4>🌿 BẠN CÓ BIẾT?</h4>
+
+                <p>
+                    Rừng Amazon được mệnh danh là
+                    “lá phổi xanh” của Trái Đất,
+                    sản sinh ra khoảng 20% lượng oxy
+                    trên toàn hành tinh.
+                </p>
+
+            <img src="{% static 'thiennhien/images/IMG_6714.jpg' %}">
+        </div>
+    </div>
+
+        <!-- Nội dung -->
+
+        <div class="col-lg-9 content">
+
+            <img src="{% static 'thiennhien/images/IMG_6714.jpg' %}"
+                class="banner">
+            <div class="quick-menu">
+
+                <a href="#forest" class="quick-item">
+                    🌲
+                    <span>Rừng xanh</span>
+                </a>
+
+                <a href="#ocean" class="quick-item">
+                    🌊
+                    <span>Đại dương</span>
+                </a>
+
+                <a href="#mountain" class="quick-item">
+                    🏔️
+                    <span>Núi non</span>
+                </a>
+
+                <a href="#waterfall" class="quick-item">
+                    💧
+                    <span>Thác nước</span>
+                </a>
+
+            </div>
+
+            <h2 class="mt-4">
+                Bài viết mới nhất
+            </h2>
+
+            <!-- Bài viết 1 -->
+
+                        <div class="card article" id="forest">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="{% static 'thiennhien/images/OIP (5).jpg' %}"
+                                        class="article-img">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h3>Rừng nguyên sinh – Lá phổi xanh của Trái Đất</h3>
+
+                                        <p>
+                                            Rừng nguyên sinh là nơi duy trì sự sống
+                                            và cân bằng sinh thái cho hành tinh của chúng ta.
+                                        </p>
+
+                                        <details class="read-more">
+                                            <summary>Đọc thêm →</summary>
+
+                                            <p>
+                                                Khám phá thêm những điều thú vị về rừng nguyên sinh.
+                                            </p>
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bài viết 2 -->
+
+                        <div class="card article" id="ocean">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="{% static 'thiennhien/images/IMG_6714.jpg' %}"
+                                        class="article-img">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h3>Khám phá thế giới đại dương</h3>
+
+                                        <p>
+                                            Đại dương bao phủ hơn 70% diện tích Trái Đất
+                                            và chứa đựng vô vàn điều kỳ diệu.
+                                        </p>
+
+                                        <a href="#">Đọc thêm →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bài viết 3 -->
+
+                        <div class="card article" id="mountain">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="{% static 'thiennhien/images/OIP (5).jpg' %}"
+                                        class="article-img">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h3>Những dãy núi hùng vĩ trên thế giới</h3>
+
+                                        <p>
+                                            Cùng chiêm ngưỡng vẻ đẹp hùng vĩ
+                                            của những dãy núi nổi tiếng nhất hành tinh.
+                                        </p>
+
+                                        <a href="#">Đọc thêm →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bài viết 4 -->
+
+                        <div class="card article" id="waterfall">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="{% static 'thiennhien/images/IMG_6714.jpg' %}"
+                                        class="article-img">
+                                </div>
+
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h3>Thác nước – Dòng chảy của thiên nhiên</h3>
+
+                                        <p>
+                                            Những thác nước tuyệt đẹp và hùng vĩ
+                                            luôn có sức hút kỳ lạ đối với con người.
+                                        </p>
+
+                                        <a href="#">Đọc thêm →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

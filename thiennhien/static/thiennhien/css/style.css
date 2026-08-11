@@ -1,0 +1,300 @@
+body{
+
+    background:#3d3d3d;
+
+    font-family:Arial;
+
+}
+
+.page{
+
+    width:95%;
+
+    margin:30px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.sidebar{
+
+    background:#4f7f36;
+
+    color:white;
+
+    min-height:100vh;
+
+    padding:35px;
+
+}
+
+.sidebar h2{
+
+    font-weight:bold;
+
+    line-height:45px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.sidebar li{
+
+    padding:12px 0;
+
+    font-size:18px;
+
+}
+
+.content{
+
+    padding:35px;
+
+}
+
+.banner{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.article{
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.article-img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:30px;
+
+}
+
+.card-body h3{
+
+    font-weight:bold;
+
+}
+
+.card-body a{
+
+    text-decoration:none;
+
+    color:#2e7d32;
+
+    font-weight:bold;
+
+}
+
+/* =========================
+   CÁC KHUNG TRONG SIDEBAR
+   ========================= */
+
+.sidebar-section {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #cbd8b8;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   DANH MỤC
+   ========================= */
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li {
+    padding: 7px 0;
+    font-size: 14px;
+}
+
+
+/* =========================
+   BÀI VIẾT NỔI BẬT
+   ========================= */
+
+.featured-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.featured-item img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.featured-item span {
+    font-size: 13px;
+}
+
+
+/* =========================
+   BẠN CÓ BIẾT
+   ========================= */
+
+.fact p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.fact img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* =========================
+   CARD BÀI VIẾT
+   ========================= */
+
+.article {
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.article-img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+
+.article .card-body {
+    padding: 18px;
+}
+
+.article h3 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.article p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.article a {
+    color: #26732a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.sidebar .sidebar-section {
+    display: block;
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #cbd8b8;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.quick-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.quick-item {
+    padding: 15px;
+    background: #f4f7ef;
+    border: 1px solid #d5dfc8;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.quick-item span {
+    display: block;
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #356b32;
+}
+
+.quick-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.read-more summary {
+    color: #26732a;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.read-more summary::-webkit-details-marker {
+    display: none;
+}
+
+.read-more p {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
