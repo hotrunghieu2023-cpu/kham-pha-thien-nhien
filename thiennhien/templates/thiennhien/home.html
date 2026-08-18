@@ -124,13 +124,7 @@
                                             và cân bằng sinh thái cho hành tinh của chúng ta.
                                         </p>
 
-                                        <details class="read-more">
-                                            <summary>Đọc thêm →</summary>
-
-                                            <p>
-                                                Khám phá thêm những điều thú vị về rừng nguyên sinh.
-                                            </p>
-                                        </details>
+                                        <a href="{% url 'detail' 'forest' %}">Đọc thêm →</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +148,7 @@
                                             và chứa đựng vô vàn điều kỳ diệu.
                                         </p>
 
-                                        <a href="#">Đọc thêm →</a>
+                                        <a href="{% url 'detail' 'ocean' %}">Đọc thêm →</a>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +172,7 @@
                                             của những dãy núi nổi tiếng nhất hành tinh.
                                         </p>
 
-                                        <a href="#">Đọc thêm →</a>
+                                        <a href="{% url 'detail' 'mountain' %}">Đọc thêm →</a>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +196,10 @@
                                             luôn có sức hút kỳ lạ đối với con người.
                                         </p>
 
-                                        <a href="#">Đọc thêm →</a>
+                                        <a href="{% url 'detail' 'waterfall' %}">Đọc thêm →</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,6 +207,23 @@
         </div>
     </div>
 </div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <h4>🌿 Khám phá thiên nhiên</h4>
+        <p>Khám phá vẻ đẹp của thiên nhiên và thế giới quanh ta.</p>
+
+        <div class="footer-links">
+            <a href="#">Trang chủ</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Khám phá thiên nhiên
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>

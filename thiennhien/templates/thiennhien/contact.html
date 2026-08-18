@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Khám phá thiên nhiên</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'thiennhien/css/style.css' %}">
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <h1>📩 Liên hệ với chúng tôi</h1>
+
+    <p>
+        Bạn có câu hỏi, góp ý hoặc muốn chia sẻ điều gì về thiên nhiên?
+        Hãy gửi tin nhắn cho chúng tôi!
+    </p>
+
+    <form>
+
+        <div class="mb-3">
+            <label class="form-label">Họ và tên</label>
+            <input type="text" class="form-control" placeholder="Nhập họ và tên">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Nhập email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nội dung</label>
+            <textarea class="form-control" rows="5"
+                placeholder="Nhập nội dung liên hệ..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success">
+            📩 Gửi liên hệ
+        </button>
+
+    </form>
+
+    <a href="/" class="back-button">
+        ← Quay về trang chủ
+    </a>
+
+</div>
+
+</body>
+</html>
